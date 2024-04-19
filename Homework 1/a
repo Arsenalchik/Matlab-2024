@@ -1,5 +1,4 @@
-
 a = [1 2 3 4 5 6 7 8 9 10];
-gmean = geomean(a)
-hmean = harmmean(a)
-mmean = median(a)
+gmean = geomean(a) %среднее геометрическое
+hmean = harmmean(a) %среднее гармоническое
+mmean = median(a) %медианное значение
