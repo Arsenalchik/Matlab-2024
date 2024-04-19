@@ -1,1 +1,22 @@
+A = rand(143);
+d1 = trace(A)
 
+ii = 143:142:(143^2 - 1);
+d2 = sum(A(ii)) 
+
+
+jj = 1:144:143^2;
+B = A;
+B(ii) = A(jj); 
+B(jj) = A(ii); 
+B;
+
+for kk = 1:13:143
+    for ll = 1:13:143
+        C(kk,ll) = det(A(kk:kk+12, ll:ll+12)); %Вывод мартицы D
+    end
+end
+D = C(1:13:142, 1:13:142);
+det(D) 
+det(A)
+det(A) == det(D)
